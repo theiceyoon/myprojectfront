@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap');
+
+* {
+    background-color: rgb(138, 182, 219);
+    margin: 0;
+    /*border와 이웃하는 요소 사이의 간격*/
+    padding: 0;
+    /*content과 border 사이의 간격*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Grenze Gotisch', cursive;
+    text-decoration-line: none;
+}
+
+.img {
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+#content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.subject {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.detail {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+nav {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration-line: none;
+}
+
+nav a {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.container {
+    width: 50vw;
+    margin: 10px auto;
+    padding: 10px 20px 20px 20px;
+    background: #43536f;
+    box-shadow: 0 0 30px rgba(101, 104, 137, 0.5);
+    font-family: 'Grenze Gotisch', cursive;
+    border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+button[type="submit"] {
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.names-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.messages-container {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-item,
+.message-item {
+    background-color: #f4f4f4;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    position: relative;
+    /* Add this line */
+}
+
+.message-item:hover,
+.name-item:hover {
+    background-color: #ddd;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.delete-btn:hover {
+    transform: scale(1.1);
+}
