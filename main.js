@@ -1,4 +1,4 @@
-const host = "http://127.0.0.1:8005";
+const host = "http://50.19.18.53";
 const nameContainer = document.querySelector('.names-container');
 const messageContainer = document.querySelector('.messages-container');
 const nameInput = document.querySelector('.name-input');
